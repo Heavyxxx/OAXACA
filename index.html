@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0b">
+    <meta name="description" content="Viajes privados y lujo consciente en los territorios menos transitados de Oaxaca.">
+    <title>PREMXCA — Viajar en silencio por Oaxaca</title>
+    <!-- Importamos fuentes elegantes de Google Fonts (Serif para títulos y Sans-Serif para cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION CON VIDEO DE FONDO -->
+    <section class="hero-section" id="inicio" aria-labelledby="hero-title">
+        
+        <!-- Video de fondo con atributos críticos para autoplay en móviles y escritorio -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <!-- Cambia 'assets/video-hero.mp4' por la ruta real de tu video -->
+            <source src="assets/oaxvid3.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+
+        <!-- Capa oscura semitransparente (Overlay) para que el texto y menú resalten sobre el video -->
+        <div class="hero-overlay"></div>
+
+        <!-- MENÚ FLOTANTE SUPERIOR -->
+        <header class="main-header">
+            <div class="logo">
+                <a href="#inicio" aria-label="PREMXCA, inicio">PREMXCA</a>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="site-navigation" aria-label="Navegación principal">
+                <a href="#experiencias">Experiencias</a>
+                <a href="#filosofia">Filosofía</a>
+                <a href="#santuarios">Territorios</a>
+                <a href="#privado">Acceso Privado</a>
+                <a href="#contacto" class="btn-cta-nav">Solicitar una cita</a>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO CENTRAL DEL HERO -->
+        <div class="hero-content">
+            <span class="hero-subtitle">El Arte del Silencio Exclusivo</span>
+            <h1 id="hero-title">Donde el tiempo se detiene, <br><em>y el mundo te pertenece.</em></h1>
+            <p>Diseñamos santuarios y travesías privadas donde cada detalle existe solo para ti. No vendemos viajes; tejemos instantes inmortales.</p>
+            <div class="hero-actions">
+                <a href="#experiencias" class="btn-primary">Explorar Colección</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+        <section class="manifesto section-pad" id="filosofia" aria-labelledby="manifesto-title">
+            <div class="section-kicker">Una forma distinta de llegar</div>
+            <div class="manifesto-copy">
+                <h2 id="manifesto-title">El arte de viajar <em>en silencio.</em></h2>
+                <p class="manifesto-lead">Hay lugares que no necesitan ser descubiertos. Solo necesitan ser encontrados con respeto.</p>
+                <p>Imaginamos un Oaxaca íntimo, lejos de las rutas previsibles. Cada encuentro nace del territorio y de quienes lo cuidan: una invitación a viajar con tiempo, presencia y una huella ligera. El verdadero privilegio no es llegar primero, sino saber cómo llegar.</p>
+                <a class="text-link" href="#santuarios">Conocer nuestros territorios <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="manifesto-index" aria-hidden="true">01 / 05</span>
+        </section>
+
+        <section class="territories section-pad" id="santuarios" aria-labelledby="territories-title">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">Cuatro paisajes, un mismo pulso</div>
+                    <h2 id="territories-title">Colecciones de <em>territorio</em></h2>
+                </div>
+                <p>Itinerarios concebidos desde la escucha, con anfitriones y saberes de cada lugar.</p>
+            </div>
+            <div class="territory-grid">
+                <article class="territory-card territory-afro">
+                    <div class="territory-art" role="img" aria-label="Atmósfera cálida inspirada en la costa afromexicana"></div>
+                    <div class="territory-meta"><span>01 — Costa Chica</span><span>Herencia viva</span></div>
+                    <h3>Santa María<br>Huazolotitlán</h3>
+                    <p>La memoria afromexicana se expresa en el color, el gesto y el arte textil. Un encuentro sereno con manos que preservan historias.</p>
+                    <a href="#contacto" class="card-link" aria-label="Consultar un viaje a Santa María Huazolotitlán">Explorar en privado <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="territory-card territory-mixteca">
+                    <div class="territory-art" role="img" aria-label="Atmósfera mineral inspirada en los cañones de la Mixteca"></div>
+                    <div class="territory-meta"><span>02 — Tierras altas</span><span>Tiempo profundo</span></div>
+                    <h3>La Mixteca</h3>
+                    <p>Cañones sagrados, piedra antigua y arquitectura vernácula. El silencio aquí no está vacío: guarda la memoria de la tierra.</p>
+                    <a href="#contacto" class="card-link" aria-label="Consultar un viaje a La Mixteca">Explorar en privado <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="territory-card territory-puerto">
+                    <div class="territory-art" role="img" aria-label="Atmósfera marina inspirada en Puerto Ángel"></div>
+                    <div class="territory-meta"><span>03 — Pacífico</span><span>Horizonte abierto</span></div>
+                    <h3>Puerto Ángel</h3>
+                    <p>Una costa que todavía respira a su propio ritmo. Navegación discreta, calas apartadas y la inmensidad del Pacífico.</p>
+                    <a href="#contacto" class="card-link" aria-label="Consultar un viaje a Puerto Ángel">Explorar en privado <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="territory-card territory-juquila">
+                    <div class="territory-art" role="img" aria-label="Atmósfera verde inspirada en la sierra de Juquila"></div>
+                    <div class="territory-meta"><span>04 — Sierra Sur</span><span>Retiro interior</span></div>
+                    <h3>Santa Catarina<br>Juquila</h3>
+                    <p>Entre niebla y montaña, la espiritualidad de la sierra invita al descanso consciente y a volver a lo esencial.</p>
+                    <a href="#contacto" class="card-link" aria-label="Consultar un viaje a Santa Catarina Juquila">Explorar en privado <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="experiences section-pad" id="experiencias" aria-labelledby="experiences-title">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">A tu propio ritmo</div>
+                    <h2 id="experiences-title">Bespoke <em>journeys</em></h2>
+                </div>
+                <p>Sin itinerarios prefabricados. Cada travesía empieza con una conversación.</p>
+            </div>
+            <div class="journey-grid">
+                <a href="#contacto" class="journey-card journey-workshop">
+                    <span class="journey-number">01 / Oficios</span>
+                    <span class="journey-title">El tiempo<br>de las manos</span>
+                    <span class="journey-caption">Un taller íntimo, guiado por sus maestros.</span>
+                </a>
+                <a href="#contacto" class="journey-card journey-table">
+                    <span class="journey-number">02 / Mesa</span>
+                    <span class="journey-title">Una mesa<br>sin nombre</span>
+                    <span class="journey-caption">Una cena creada para unos pocos.</span>
+                </a>
+                <a href="#contacto" class="journey-card journey-expedition">
+                    <span class="journey-number">03 / Territorio</span>
+                    <span class="journey-title">Donde acaba<br>el camino</span>
+                    <span class="journey-caption">Expediciones privadas, sin prisa.</span>
+                </a>
+            </div>
+            <p class="experience-note">Cada experiencia se diseña a medida y en colaboración con anfitriones locales.</p>
+        </section>
+
+        <section class="essence" id="esencia" aria-labelledby="essence-title">
+            <div class="essence-image" role="img" aria-label="Texturas y tonos cálidos que evocan la esencia de Oaxaca">
+                <span>Oaxaca, en sus propios términos</span>
+            </div>
+            <div class="essence-copy">
+                <div class="section-kicker">La alquimia de Oaxaca</div>
+                <h2 id="essence-title">Una cultura que<br><em>se siente.</em></h2>
+                <p>El humo lento del comal. El pulso de un telar. Una música que cruza la plaza al caer la tarde. En Oaxaca, la belleza no es un espectáculo: es una forma cotidiana de estar en el mundo.</p>
+                <p>Nos acercamos a su gastronomía, su arte y sus ritmos con curiosidad y cuidado. Porque la esencia de un lugar no se consume: se comparte, y se honra.</p>
+                <a class="text-link" href="#contacto">Conversemos sobre tu viaje <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="private-access section-pad" id="privado" aria-labelledby="private-title">
+            <div class="private-intro">
+                <div class="section-kicker">Inquire only · Acceso privado</div>
+                <h2 id="private-title">El comienzo<br>es una <em>conversación.</em></h2>
+                <p>Cuéntanos qué buscas. Nuestro concierge escuchará primero y diseñará después, siempre en diálogo con el territorio.</p>
+                <div class="private-mark" aria-hidden="true">P<span>.</span></div>
+            </div>
+            <form class="inquiry-form" id="contacto">
+                <div class="form-row">
+                    <label for="guest-name">Nombre</label>
+                    <input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-row">
+                    <label for="guest-email">Correo electrónico</label>
+                    <input id="guest-email" name="email" type="email" autocomplete="email" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="guest-interest">Territorio de interés</label>
+                    <select id="guest-interest" name="interest" required>
+                        <option value="" selected disabled>Elige un territorio</option>
+                        <option>Santa María Huazolotitlán</option>
+                        <option>La Mixteca</option>
+                        <option>Puerto Ángel</option>
+                        <option>Santa Catarina Juquila</option>
+                        <option>Una travesía a medida</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="guest-message">¿Qué imaginas?</label>
+                    <textarea id="guest-message" name="message" rows="3" placeholder="Fechas aproximadas, intereses o cualquier detalle que quieras compartir."></textarea>
+                </div>
+                <button class="form-submit" type="submit">Enviar solicitud <span aria-hidden="true">↗</span></button>
+                <p class="form-note">Prototipo: esta solicitud no se envía ni almacena. El formulario requiere integración para contactar al concierge.</p>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" href="#inicio">PREMXCA</a>
+        <p>Viajar con presencia. Dejar espacio para lo que ya existe.</p>
+        <a href="#inicio" class="back-to-top">Volver arriba ↑</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
